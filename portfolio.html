@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="pStlyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="left">
+      <h1>Portfolio</h1>
+    </div>
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i><span>Github</span>
+      </a>
+      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+      </a>
+      <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hello, I'm SpiderMan</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente minus perspiciatis libero ducimus id a voluptates, assumenda illo dolorem eum non totam fugiat autem!</p>
+        <div class="links">
+          <a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+          <a href="#testimony"><i class="fa-solid fa-pen"></i><span>Testimony</span></a>
+          <a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+        </div>
+      </div>
+      <div class="headshot">
+        <img src="spi.jpg" alt="headshot" />
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente minus perspiciatis libero ducimus id a voluptates, assumenda illo dolorem eum non totam fugiat autem!
+      </div>
+      <div class="cells">
+        <div class="cell">
+          <a href="#cpp-detail" class="skill-link">
+            <img src="c++.webp" alt="c++ logo" />
+            <span>C++</span>
+          </a>
+        </div>
+        <div class="cell">
+          <a href="#java-detail" class="skill-link">
+            <img src="javan.webp" alt="java logo" />
+            <span>Java</span>
+          </a>
+        </div>
+        <div class="cell">
+          <a href="#html-detail" class="skill-link">
+            <img src="httml.webp" alt="html logo" />
+            <span>HTML</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimony Section -->
+    <section id="testimony" class="testimony-section">
+      <h2>Testimony</h2>
+      <div class="group">
+        <div class="person-deets">
+          <img src="peace.jpg" alt="pic ni spaydorman" />
+          <p>Spider Man</p>
+        </div>
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, odit aperiam in amet temporibus autem obcaecati, necessitatibus iste sit veritatis quisquam ipsam voluptatum corrupti fuga nesciunt ea explicabo quos tempora.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Detail Section -->
+    <div class="skill-details-row">
+      <section id="cpp-detail" class="skill-detail-section">
+        <img src="c++.webp" alt="c++ logo" />
+        <h2>C++</h2>
+        <button class="learn-more-btn" onclick="window.open('https://shorturl.at/KAy0h', '_blank')">Learn more</button>
+      </section>
+
+      <section id="java-detail" class="skill-detail-section left">
+        <img src="javan.webp" alt="java logo" />
+        <h2>Java</h2>
+        <button class="learn-more-btn" onclick="window.open('https://shorturl.at/hBLxs', '_blank')">Learn more</button>
+      </section>
+
+      <section id="html-detail" class="skill-detail-section">
+        <img src="httml.webp" alt="html logo" />
+        <h2>HTML</h2>
+        <button class="learn-more-btn" onclick="window.open('https://shorturl.at/Ovji7', '_blank')">Learn more</button>
+      </section>
+    </div>
+
+    <!-- Contact Section -->
+   <section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p class="section-subtitle">We'd love to hear from you. Reach out anytime!</p>
+  
+  <div class="contact-cards">
+    <div class="contact-card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>ADDRESS</h3>
+      <p> Universe 7  Planet Namek</p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-phone-alt"></i>
+      <h3>PHONE</h3>
+      <p>09123456789</p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <h3>EMAIL</h3>
+      <p>PeterParker@email.com</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p class="copyright">2025 SpiderMan. All rights reserved.</p>
+    <div class="footer-links">
+      <span>About</span>
+      <span class="divider">|</span>
+       <span>Contact</span>
+      <span class="divider">|</span>
+      <span>Privacy Policy</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

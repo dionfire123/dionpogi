@@ -1,0 +1,544 @@
+/* -------------------------
+   Base Styles & Global
+-------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #000000, #B6B09F, #EAE4D5, #969391);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* -------------------------
+   Navbar
+-------------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    background: rgba(34, 40, 49, 0.85);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+nav .left {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+}
+
+nav .right a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+nav .right a:hover {
+    color: #f6d365;
+}
+
+nav .right a span {
+    margin-left: 8px;
+}
+
+/* -------------------------
+   Hero Section
+-------------------------- */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px 40px 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-section .text {
+    flex: 5;
+    color: #fff;
+}
+
+.hero-section .text h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-section .text p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-section .links a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    background: rgba(0,0,0,0.15);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.hero-section .links a:hover {
+    background: #fff;
+    color: #e66465;
+    border-color: #e66465;
+}
+
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.hero-section .headshot img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+/* -------------------------
+   Skills Section
+-------------------------- */
+.skills-section {
+    background: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    margin: 40px 50px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #222831;
+    margin-bottom: 20px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222831;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-section .cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 20px 10px;
+    margin: 10px;
+    border: 1.5px solid #e66465;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.skills-section .cell:hover {
+    transform: translateY(-8px) scale(1.05);
+    border-color: #f6d365;
+}
+
+.skills-section .cell img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.skills-section .cell span {
+    font-size: 16px;
+    color: #222831;
+    font-weight: 500;
+}
+
+.skill-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------------
+   Skill Detail Sections
+-------------------------- */
+.skill-details-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.skill-detail-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 250px;
+    max-width: 320px;
+    background: rgba(255,255,255,0.96);
+    border-radius: 16px;
+    margin: 20px 10px;
+    padding: 28px 16px 24px 16px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.skill-detail-section img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    border: 4px solid #e66465;
+    background: #fff;
+}
+
+.skill-detail-section h2 {
+    color: #e66465;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.learn-more-btn {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px 20px;
+    background: #e66465;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.learn-more-btn:hover {
+    background: #f6d365;
+    color: #222831;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* -------------------------
+   Testimony Section
+-------------------------- */
+.testimony-section {
+    background: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    margin: 40px 50px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.testimony-section h2 {
+    font-size: 32px;
+    color: #222831;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimony-section .group {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimony-section .person-deets {
+    text-align: center;
+    flex: 2;
+}
+
+.testimony-section .person-deets img {
+    width: 180px;
+    height: 180px;
+    border-radius: 30%;
+    object-fit: cover;
+    border: 4px solid #e66465;
+    margin-bottom: 10px;
+}
+
+.testimony-section .person-deets p {
+    font-weight: 600;
+    color: #222831;
+    margin: 0;
+}
+
+.testimony-section .group .text {
+    flex: 4;
+    color: #222831;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* -------------------------
+   Contact Section
+-------------------------- */
+.contact-section {
+  padding: 10px 20px;
+  background-color: #e66465;
+  text-align: center;
+   border-radius: 18px;   
+  margin-bottom: 10px;   
+}
+
+.contact-section .section-title {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contact-section .section-subtitle {
+   color: #ffffff;
+  margin-bottom: 65px;
+  font-size: 25px;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.contact-card {
+  flex: 1 1 240px;
+  max-width: 280px;
+  padding: 25px;
+  border-radius: 14px;
+  background-color: #ffffff; 
+  transition: transform 0.3s ease;
+}
+
+.contact-card i {
+  font-size: 30px;
+  color: #e66465;
+  margin-bottom: 14px;
+}
+
+.contact-card h3 {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+   color: #e66465;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.contact-card p {
+  font-size: 15px;
+  color: #e66465;
+  margin: 0;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .contact-section {
+        margin: 30px 20px;
+        padding: 35px 25px;
+    }
+
+    .contact-box h2 {
+        font-size: 28px;
+    }
+
+    .contact-subtext {
+        font-size: 15px;
+    }
+
+    .email-item {
+        font-size: 15px;
+        padding: 14px 18px;
+    }
+
+    .email-item i {
+        font-size: 18px;
+    }
+}
+
+
+/* -------------------------
+   Responsive Design
+-------------------------- */
+@media (max-width: 1000px) {
+    .hero-section, .skills-section, .testimony-section {
+        margin: 30px 10px;
+        padding: 30px 10px;
+    }
+
+    nav {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 30px 10px;
+        gap: 20px;
+    }
+
+    .hero-section .headshot img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .skills-section .cells {
+        gap: 10px;
+    }
+
+    .testimony-section .group {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 5px;
+    }
+
+    nav .right {
+        margin-top: 10px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 28px;
+    }
+
+    .skills-section h2,
+    .testimony-section h2 {
+        font-size: 22px;
+    }
+
+    .skills-section .cell {
+        width: 90px;
+        padding: 10px 5px;
+    }
+
+    .skills-section .cell img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimony-section .person-deets img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .testimony-section .group .text {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+.footer {
+  background-color: #489f9c;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5);
+  color: #000;
+}
+
+.footer {
+  background-color: #489f9c;
+  padding: 8px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4);
+  color: #000;
+  font-size: 13px;
+}
+
+.footer {
+  background-color: #222831;
+  padding: 10px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.footer-content {
+  line-height: 1.4;
+}
+
+.footer-links {
+  margin-top: 3px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 6px;
+  font-weight: normal;
+}
+
+.footer-links .divider {
+  color: white;
+  margin: 0 4px;
+}
+
+
